@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>link youtube</title>
+ 
+ <meta charset="UTF-8"> 
+<style>
+body {
+	 padding: 20px;
+}
+div {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 20px;
+    
+padding: 10px;
+
+    border: 3px solid black;
+
+    background-color: lightblue;
+}
+
+.input-large {
+  color: color: #ff0370;
+  
+  
+  line-height: 30px !important;
+ 
+  font-size: 50px !important;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+
+}
+
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: blue;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: blue;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: blue;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: blue;
+}
+.cr {
+       
+    border: .08em solid rgba(0,0,0,.1);
+    border-radius: .8px;
+}
+.cr, .cr:active {
+    background: #41b7d8;
+}
+
+.cr, .nxt a, .prv a {
+    display: inline-block;
+}
+input[type=button] {
+    width: 410px;  
+    height: 72px;
+ }
+input[type="text"] {
+
+  background-color : #d1d1d1; 
+
+}
+input {
+color: blue;
+font-size: 50px
+} 
+input[type="text"] {
+color: green;
+ 
+
+}
+
+</style>
+
+</head>
+
+<body>
+<div>
+
+<center>
+<form>
+    <input type="text" name="enter" class="cr" value="" id="lolz"  size="40" maxlength="150" placeholder="Pedaço do Link do youtube."/>
+    <input type="button" value="ENVIAR" OnClick="kk()"/>
+</form>
+</center>
+
+
+
+    <script type="text/javascript">
+
+       var lol = document.getElementById('lolz');
+      
+	
+       function kk() {
+
+        if (lol.value==null||lol.value==""){
+
+            myWindow = window.open('https://www.youtube.com/' , "myWindow", "width=360,height=250,TOP=640 , LEFT=1450");
+
+            
+         
+
+               // alert("xxxxxxxxxxxxxxx");
+
+
+        } else {
+          //alert("esta abrindo aqui");
+            myWindow = window.open('https://www.youtube.com/embed/'+lol.value, "myWindow", "width=360,height=250,TOP=640 , LEFT=1450");
+            
+
+   
+        }
+           
+       }
+
+    </script>
+
+
+
+
+
+
+
+       <center>
+        <form>
+            <input type="text" name="enter1" class="cr" value="" id="valdo"  size="40" maxlength="150" placeholder="Link do youtube."/>
+            <input type="button" value="ENVIAR COM ABA" OnClick="funval()"/>
+        </form>
+        </center>
+
+
+
+        <script type="text/javascript">
+
+         var ard = document.getElementById('valdo');
+
+
+  
+       function funval() {
+        
+
+        if (ard.value==null||ard.value==""){
+
+          
+          window.open('https://www.youtube.com/' , "Pagina", "MENUBAR=0 , channelmode=0 , titlebar=0 , frameborder=0 scrolling=0, status=0 ,  TOOLBAR=1 ,  location=0,  DIRECTORIES=0 ,  RESISABLE=1 , SCROLLBARS=YES ,  TOP=640 , LEFT=1450 ,WIDTH=360 , HEIGHT=250 ");
+        
+          
+
+               // alert("xxxxxxxxxxxxxxx");
+
+
+        } else {
+          //alert("esta abrindo aqui");
+
+           window.open(ard.value , "Pagina", "MENUBAR=0 , channelmode=0 , titlebar=0 , frameborder=0 scrolling=0, status=0 ,  TOOLBAR=1 ,  location=0,  DIRECTORIES=0 ,  RESISABLE=1 , SCROLLBARS=YES ,  TOP=640 , LEFT=1450 ,WIDTH=360 , HEIGHT=250 ");
+        }
+           
+       }
+    </script>
+
+</div>
+</body>
+</html> 
+
